@@ -6,10 +6,6 @@ RUN cd /comfyui/custom_nodes && \
     git clone https://github.com/city96/ComfyUI-GGUF && \
     cd ComfyUI-GGUF && pip install -q -r requirements.txt 2>/dev/null || true
 
-RUN cd /comfyui/custom_nodes && \
-    git clone https://github.com/1038lab/ComfyUI-QwenVL && \
-    cd ComfyUI-QwenVL && pip install -q -r requirements.txt 2>/dev/null || true
-
 COPY bootstrap_models.py /bootstrap_models.py
 RUN chmod +x /bootstrap_models.py
 
