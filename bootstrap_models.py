@@ -26,11 +26,6 @@ MODELS = [
         "file": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-8steps.safetensors",
         "dest_dir": os.path.join(MODEL_DIR, "controlnet"),
     },
-    {
-        "repo": "lmstudio-community/Qwen3-VL-4B-Instruct-GGUF",
-        "file": "Qwen3-VL-4B-Instruct-Q4_K_M.gguf",
-        "dest_dir": os.path.join(MODEL_DIR, "qwen_vl"),
-    },
 ]
 
 def download_flat(repo, file, dest_dir):
