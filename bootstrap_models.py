@@ -21,11 +21,6 @@ MODELS = [
         "file": "NSFW_master_ZIT_000008766.safetensors",
         "dest_dir": os.path.join(MODEL_DIR, "loras"),
     },
-    {
-        "repo": "alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union-2.1",
-        "file": "Z-Image-Turbo-Fun-Controlnet-Union-2.1-8steps.safetensors",
-        "dest_dir": os.path.join(MODEL_DIR, "controlnet"),
-    },
 ]
 
 def download_flat(repo, file, dest_dir):
